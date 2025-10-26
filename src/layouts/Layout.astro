@@ -1,15 +1,28 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
+---
+import '../styles/global.css' 
+
+// Importa componentes o utiliza clases de Tailwind según sea necesario
+// Tailwind CSS 4.0 utiliza sintaxis más concisa, por ejemplo:
+// <div class="bg-gray-900/100">...</div> o clases JIT más directas.
+
+// Definición de colores base (utilizando aproximaciones de grises oscuros y azul neón en Tailwind)
+const NEON_BLUE = 'text-cyan-400'; // Azul brillante/neón para destacar
+const DARK_GRAY_BG = 'bg-gray-950/95'; // Fondo muy oscuro, casi negro, pero no puro
+const LIGHT_GRAY_TEXT = 'text-gray-200'; // Texto claro, no blanco puro
+const MID_GRAY_BORDER = 'border-gray-800'; // Grises medios para bordes y separadores
+---
+
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Digital | Marketing y Desarrollo de Apps</title>
+    </head>
+
+    <body class="bg-gray-950/95 text-gray-200 min-h-screen">
 		<slot />
 	</body>
+
 </html>
 
 <style>

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    /* Fondo y texto (Grises sutiles) */
+  --color-dark-bg: #0A0A0B;      /* Gris muy oscuro, no negro puro */
+  --color-light-text: #E5E7EB;   /* Gris muy claro, no blanco puro */
+  --color-mid-border: #1F2937;   /* Gris medio para bordes */
+  
+  /* Color de Acento (Azul Neón) */
+  --color-neon-blue: #22D3EE;    /* El Cyan vibrante */
+
+  /* Color para fondos de tarjeta/elemento interactivo */
+  --color-card-bg: #111827;
+}
