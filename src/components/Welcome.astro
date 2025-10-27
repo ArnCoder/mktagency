@@ -1,3 +1,7 @@
+---
+import Footer from './Footer.astro';
+---
+
 <header
     class="sticky top-0 z-50 p-4 border-b border-gray-800 bg-gray-950/70 backdrop-blur-sm"
 >
@@ -20,7 +24,7 @@
 </header>
 
 <main class="max-w-6xl mx-auto px-4">
-    <section class="py-24 md:py-32 text-center">
+    <section id="inicio" class="py-12 md:py-16 text-center">
         <h1 class="text-4xl md:text-7xl font-extrabold mb-4 leading-tight">
             Impulsa tu Marca y Transfórmala con <span class="text-cyan-400"
                 >Tecnología</span
@@ -40,7 +44,7 @@
 
     <hr class="border-gray-800/50 my-10" />
 
-    <section id="servicios" class="py-16 md:py-24">
+    <section id="servicios" class="py-12 md:py-16">
         <h2 class="text-4xl font-bold text-center mb-12">
             Nuestras Soluciones Clave
         </h2>
@@ -100,11 +104,14 @@
         </div>
     </section>
 
+    
+    
+
     <hr class="border-gray-800/50 my-10" />
 
     <section
         id="desarrollo"
-        class="py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center"
+        class="py-12 md:py-16 grid md:grid-cols-2 gap-12 items-center"
     >
         <div class="order-2 md:order-1">
             <h2 class="text-4xl font-bold mb-4">
@@ -144,7 +151,73 @@
 
     <hr class="border-gray-800/50 my-10" />
 
-    <section id="contacto" class="py-16 md:py-24 text-center">
+    <section
+        id="ia-automatizacion"
+        class="py-12 md:py-16 grid md:grid-cols-2 gap-12 items-center"
+    >
+    <div
+            class="aspect-video w-full rounded-xl border-gray-800 border flex items-center justify-center bg-gray-900/50"
+        >
+            <span class="text-gray-500"
+                >[Imagen de flujos de automatización/IA - 600x400px]</span
+            >
+        </div>
+        <div>
+            <h2 class="text-4xl font-bold mb-4">
+                IA y Automatización para tu Negocio
+            </h2>
+            <p class="text-lg text-gray-400 mb-6">
+                Llevamos tu eficiencia al siguiente nivel. Integramos soluciones
+                de IA y automatizamos flujos de trabajo con herramientas como <strong
+                    class="text-cyan-400">n8n</strong
+                > para que puedas centrarte en lo que realmente importa: hacer
+                crecer tu negocio.
+            </p>
+            <ul class="space-y-3 text-gray-300">
+                <li class="flex items-center">
+                    <span class="{NEON_BLUE} mr-2">✓</span> Automatización de
+                    Procesos y Tareas Repetitivas
+                </li>
+                <li class="flex items-center">
+                    <span class="{NEON_BLUE} mr-2">✓</span> Integración de
+                    Chatbots y Asistentes Virtuales
+                </li>
+                <li class="flex items-center">
+                    <span class="{NEON_BLUE} mr-2">✓</span> Análisis de Datos y
+                    Reportes Automatizados
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section id="proceso" class="py-12 md:py-16">
+    <h2 class="text-4xl font-bold text-center mb-12">
+        Nuestro Proceso Simplificado
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
+        <div class="p-4">
+            <div class="text-3xl font-bold text-cyan-400 mb-2">01</div>
+            <h3 class="text-xl font-semibold mb-2">Análisis y Estrategia</h3>
+            <p class="text-gray-400">Entendemos tus metas para crear un plan a medida.</p>
+        </div>
+        <div class="p-4">
+            <div class="text-3xl font-bold text-cyan-400 mb-2">02</div>
+            <h3 class="text-xl font-semibold mb-2">Implementación</h3>
+            <p class="text-gray-400">Construimos y ejecutamos con precisión y tecnología de punta.</p>
+        </div>
+        <div class="p-4">
+            <div class="text-3xl font-bold text-cyan-400 mb-2">03</div>
+            <h3 class="text-xl font-semibold mb-2">Crecimiento y Soporte</h3>
+            <p class="text-gray-400">Medimos resultados y optimizamos para un éxito continuo.</p>
+        </div>
+    </div>
+</section>
+
+
+    <hr class="border-gray-800/50 my-10" />
+
+    <section id="contacto" class="py-12 md:py-16 text-center">
         <h2 class="text-4xl font-bold mb-4">¿Listo para el Próximo Nivel?</h2>
         <p class="text-xl text-gray-400 mb-8">
             Cuéntanos sobre tu proyecto. Estamos listos para impulsarte en
@@ -169,16 +242,4 @@
     </section>
 </main>
 
-<footer
-    class="mt-20 p-8 border-t {MID_GRAY_BORDER} text-center text-sm text-gray-400"
->
-    <p>
-        &copy; {new Date().getFullYear()} [Nombre de tu Agencia]. Todos los derechos
-        reservados.
-    </p>
-    <p class="mt-2">
-        Diseñado con <span class="{NEON_BLUE}">Astro</span> y <span
-            class="{NEON_BLUE}">Tailwind v4</span
-        >.
-    </p>
-</footer>
+<Footer />

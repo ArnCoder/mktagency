@@ -1,0 +1,72 @@
+---
+// Clases de estilo reutilizadas de Layout.astro para consistencia.
+const NEON_BLUE = 'text-cyan-400';
+const MID_GRAY_BORDER = 'border-gray-800';
+---
+
+<footer class="border-t {MID_GRAY_BORDER} mt-20">
+    <div
+        class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-2 md:grid-cols-4 gap-8"
+    >
+        <div class="col-span-2 lg:col-span-1">
+            <a href="#" class="text-xl font-bold {NEON_BLUE}"
+                >[Nombre de tu Agencia]</a
+            >
+            <p class="text-gray-400 text-sm mt-2">
+                Transformando ideas en realidad digital.
+            </p>
+        </div>
+
+        <div>
+            <h4 class="font-semibold mb-3">Mapa del Sitio</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+                <li><a href="#" class="hover:{NEON_BLUE}">Inicio</a></li>
+                <li><a href="#servicios" class="hover:{NEON_BLUE}">Servicios</a></li>
+                <li>
+                    <a href="#ia-automatizacion" class="hover:{NEON_BLUE}"
+                        >IA y Automatización</a
+                    >
+                </li>
+                <li><a href="#desarrollo" class="hover:{NEON_BLUE}">Desarrollo</a></li>
+                <li><a href="#proceso" class="hover:{NEON_BLUE}">Proceso</a></li>
+                <li><a href="#contacto" class="hover:{NEON_BLUE}">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-semibold mb-3">Legal</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+                <li>
+                    <a href="#legal" class="hover:{NEON_BLUE}"
+                        >Política de Privacidad</a
+                    >
+                </li>
+                <li>
+                    <a href="#legal" class="hover:{NEON_BLUE}"
+                        >Términos de Servicio</a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-semibold mb-3">Redes Sociales</h4>
+            <div class="flex space-x-4">
+                <!-- Reemplaza '#' con tus URLs reales -->
+                <a href="#" aria-label="LinkedIn" class="hover:text-cyan-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="hover:text-cyan-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.51.098.998.063 1.46-.056-1.522-.308-2.673-1.65-2.673-3.25 0-.014 0-.028.002-.042.448.249.96.4.1488.428-1.373-.918-2.265-2.488-2.265-4.22 0-.928.249-1.77.688-2.488 1.64 2.015 4.098 3.328 6.846 3.468-.054-.244-.082-.499-.082-.766 0-1.848 1.498-3.346 3.346-3.346.962 0 1.833.406 2.442 1.062.76-.15 1.485-.428 2.14-.817-.25.777-.777 1.437-1.464 1.854.673-.081 1.313-.259 1.9-.518-.447.662-.995 1.248-1.604 1.7z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center text-sm text-gray-400">
+        <p class="px-4 py-6">
+            &copy; {new Date().getFullYear()} [Nombre de tu Agencia]. Todos los
+            derechos reservados.
+        </p>
+    </div>
+</footer>
